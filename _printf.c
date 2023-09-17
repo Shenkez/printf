@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _printf - simple printf.
+ * authors: abdulkerim and Bobai
+ * @format: pointer to string inputed by the user.
+ * Return: number of characters printed excluding null terminator.
+ */
 int _printf(const char *format, ...)
 {
 	int count;
