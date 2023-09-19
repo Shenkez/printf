@@ -8,7 +8,7 @@
 
 void print_int(int num, int *counter)
 {
-	char buffer[32];
+	char buffer[12];
 	int len = 0;
 	int is_negative = 0;
 	int i;
