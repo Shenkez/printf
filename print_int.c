@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_int - return an int
+ * @num: holds a digit
+ * @counter: keep character count
+ *
+ */
 
 void print_int(int num, int *counter)
 {
@@ -13,22 +19,21 @@ void print_int(int num, int *counter)
 		is_negative = 1;
 		num = -num;
 	}
-	
-	do
-	{
+
+	do {
 		buffer[len++] = '0' + num % 10;
 		num /= 10;
-	}
-	while (num > 0);
-	
+	} while (num > 0);
+
 	if (is_negative)
 	{
 		buffer[len++] = '-';
 	}
-	
+
 	for (i = 0, j = len - 1; i < j; i++, j--)
 	{
 		char temp = buffer[i];
+
 		buffer[i] = buffer[j];
 		buffer[j] = temp;
 	}
